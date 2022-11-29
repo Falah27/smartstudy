@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style type="text/css">
+    * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Bahasa C</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light shadow" style="background-color: #264653">
+    <div class="container">
+      <a class="navbar-brand" style="color: #eeeeee" href="#">Bahasa C</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mr-20">
+            <a class="nav-link" style="color: #eeeeee" href="#home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" style="color: #eeeeee">Materi</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li class="dropdown-item">
+                <a class="nav-link active" aria-current="page" href="#materi">Pengenalan</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link active" aria-current="page" href="#">Operator</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link active" aria-current="page" href="#">Seleksi Kondisi</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="nav-link active" aria-current="page" href="#">Pendahuluan</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #eeeeee" href="#contact">About me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="hero-img">
+            <img class="hero-imgg" src="bapak.jpg" width="300">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card card-hero">
+            <div class="card-body">
+              <h2 class="card-title mb-5">Dennis Ritchie</h2>
+              <p class="card-text text-center">Dennis MacAlistair Ritchie (9 September 1941–12 Oktober 2011) adalah
+                seorang ilmuwan komputer yang dikenal atas sumbangsihnya membuat bahasa pemrograman C dan berbagai
+                sistem operasi seperti Multics dan Unix. Ritchie menerima penghargaan Turing Award pada tahun 1983 dan
+                National Medal of Technology 1998 pada 21 April 1999. Ia menjabat sebagai kepala Departemen Riset
+                Perangkat lunak Sistem di Lucent Technologies saat pensiun pada tahun 2007.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="materi">
+
+    <div class="pendahuluan">
+      <div class="card mx-auto card-materi">
+        <div class="card-header text-center">
+          <H2>Pengenalan Bahasa C</H2>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title ">Pembagian Bahasa Komputer</h5>
+          <div class="card-text">
+            <div class="row">
+              <div class="col-sm-3 mt-3">
+                <div class="card">
+                  <div class="card-title text-white"
+                    style="background-color: #219ebc; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+
+                    Bahasa Mesin
+
+                  </div>
+                  <div class="card-text">
+                    <p>adalah bahasa pemrograman yang instruksi dan variabelnya direpresentasikan dalam bentuk kode
+                      bahasa biner yang dimengerti oleh CPU yang spesifik, contohnya 0101 0010 0111 0000.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 mt-3">
+                <div class="card">
+                  <div class="card-title text-white"
+                    style="background-color: #219ebc; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+
+                    Bahasa Tingkat Rendah
+
+                  </div>
+                  <div class="card-text">
+                    dikenal dengan istilah bahasa rakitan (Assembly), adalah bahasa pemrograman yang masing-masing
+                    instruksinya direpresentasikan dengan kode - kode singkat ( kode mnemonic ), contohnya MOV, SUB,
+                    CMP, JMP,JGE, JL, LOOP, dsb.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 mt-3">
+                <div class="card">
+                  <div class="card-title text-white"
+                    style="background-color: #219ebc; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+
+                    Bahasa Tingkat Menengah
+
+                  </div>
+                  <div class="card-text">
+                    bahasa komputer yang mendukung fitur dari bahasa tingkat tinggi dan mampu melakukan pengaksesan
+                    memori secara langsung.
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3 mt-3">
+                <div class="card">
+                  <div class="card-title text-white"
+                    style="background-color: #219ebc; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+
+                    Bahasa Tinggi
+
+                  </div>
+                  <div class="card-text">
+                    bahasa komputer yang memakai instruksi berasal dari ekspresi aljabar ({, }, ?, << ,>>, &&, ||, dsb.)
+                      dan unsur kata-kata bahasa manusia (dalam kasus ini bahasa inggris), contohnya begin, end, if,
+                      for, while, and, or, cout, cin, dsb.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p>Makin tinggi tingkat suatu bahasa pemrograman komputer, maka bahasa pemrograman komputer tersebut akan
+              semakin dekat dengan bahasa manusia, sehingga makin mudah dipelajari. Dan makin rendah tingkat suatu
+              bahasa pemrograman komputer, maka akan lebih sulit untuk dipelajari namun kecepatan eksekusinya akan
+              semakin tinggi.</p>
+
+            <div class="bahasa-c mt-5">
+              <h5>Karakteristik Bahasa C</h5>
+              <div class="row justify-content-center">
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #264653; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Bahasa Tingkat Menengah
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #264653; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Bersifat Case Sensitive
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="eksekusi-c mt-5">
+              <h5>Tahap eksekusi bahasa C</h5>
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #2a9d8f; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Editing
+                  </div>
+                  <div class="card-text">
+                    <p>Proses membuat dan memodifikasi source code bahasa C menggunakan software IDE (contoh : Dev C++,
+                      CodeBlocks, Vs Code, dsb)</p>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #2a9d8f; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Compiling
+                  </div>
+                  <div class="card-text">
+                    <p>Mengubah source-code ke bahasa mesin dan mendeteksi error yang terjadi, outputnya berupa file
+                      dengan format .obj</p>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #2a9d8f; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Linking
+                  </div>
+                  <div class="card-text">
+                    <p>Menggabungkan file yang dihasilkan compiler dengan library pada program, mendeteksi error yang
+                      berhubungan dengan definisi fungsi/variabel yang hilang. Outputnya berupa file berformat .exe</p>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card-title text-white"
+                    style="background-color: #2a9d8f; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Executing
+                  </div>
+                  <div class="card-text">
+                    <p>Programmer menjalankan program</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="struktur-c mt-5">
+              <h5>Struktur Bahasa C</h5>
+              <div class="row">
+                <div class="col-sm-4">
+
+                  <div class="card-title"
+                    style="background-color: #ffb703; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Preprocessor Directives
+                  </div>
+                  <div class="card-text">
+                    <p>baris program yang dimulai dengan tanda #, menyediakan intruksi kepada preprocessor, Contoh
+                      syntax : #include dan #define
+                    </p>
+
+                  </div>
+
+                </div>
+                <div class="col-sm-4">
+
+                  <div class="card-title"
+                    style="background-color: #ffb703; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Deklarasi Global
+                  </div>
+                  <div class="card-text">
+                    <p>Tempat pendeklarasian maupun pendefinisian konstanta, variable, fungsi atau header fungsi, tipe
+                      data baru atau struktur data yang bersifat global
+                    </p>
+
+                  </div>
+
+                </div>
+                <div class="col-sm-4">
+
+                  <div class="card-title"
+                    style="background-color: #ffb703; border-radius: 10px; padding: 10px; text-align: center; align-items: center;">
+                    Fungsi Utama
+                  </div>
+                  <div class="card-text">
+                    <p>Fungsi yang pertama kali dieksekusi oleh Bahasa C, Fungsi lain akan dieksekusi apabila dipanggil
+                      di dalam fungsi utama
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
